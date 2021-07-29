@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>表单的创建</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            请输入你的姓名：<input type="text">
+        </p>
+        <p>
+            报考院校：<input type="text" value="清华大学" disabled>
+        </p>
+        <p>
+            毕业学校：<input type="text" placeholder="输入毕业学校">
+        </p>
+
+        <p>
+            性别：<label><input type="radio" name="sex" value="man"> 男</label>
+            <label><input type="radio" name="sex" value="woman"> 女 </label>
+        </p>
+        <p>
+            性别：<input type="radio" name="blood" value="a"> A
+            <input type="radio" name="blood" value="o"> B
+        </p>
+        <p>
+            爱好：
+            <label><input type="checkbox" name="hobby" value="zuqiu">足球</label>
+            <label><input type="checkbox" name="hobby" value="lanqiu">篮球</label>
+            <label><input type="checkbox" name="hobby" value="paiqiu">排球</label>
+            <label><input type="checkbox" name="hobby" value="ppqiu">乒乓球</label>
+        </p>
+        <p>
+            密码：<input type="password">
+        </p>
+
+        <!--下拉菜单-->
+        <p>
+            <select>
+                <option value="javascript">javascript</option>
+                <option value="javascript">javascript</option>
+                <option value="javascript">javascript</option>
+                <option value="javascript">javascript</option>
+                <option value="javascript">javascript</option>
+
+            </select>
+        </p>
+
+        <p>
+            留言：
+            <textarea cols="10" rows="100"></textarea>
+        </p>
+
+        <p>
+            <button>普通按钮</button>
+        </p>
+
+        <p>
+            <input type="button"> 普通按钮
+        </p>
+
+        <p>
+            <input type="submit"> 提交按钮
+        </p>
+
+        <p>
+            <input type="reset"> 重置按钮
+        </p>
+
+    </form>
+</body>
+</html>
