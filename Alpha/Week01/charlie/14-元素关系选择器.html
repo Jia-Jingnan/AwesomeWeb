@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>元素关系选择器</title>
+    <style>
+        .box>p{
+            color: blue;
+        }
+
+        img+span{
+            color: red;
+        }
+
+        h3~span {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>我是段落</p>
+        <p>我是段落</p>
+        <div>
+            <p>我是段落</p>
+            <p>我是段落</p>
+        </div>
+        <p>我是段落</p>
+        <p>我是段落</p>
+
+        <p>
+            <img src="#">
+            <span>故宫</span>
+        </p>
+        <p>
+            <img src="#">
+            <span>长城</span>
+        </p>
+
+        <h3>我是一个三级标题</h3>
+        <span>后面的span</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>17-序号选择器</title>
+    <style>
+        .box1 p:first-child {
+            color: red;
+        }
+
+        .box1 p:last-child {
+            color: blue;
+        }
+
+        .box2 p:nth-child(3){
+            color: green;
+        }
+
+        .box3 p:nth-child(2n+1) {
+            color: pink;
+        }
+
+        .box4 p:nth-of-type(3) {
+            color: orange;
+        }
+
+        .box5 :nth-last-of-type(3) {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+    </div>
+    <div class="box2">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+    </div>
+    <div class="box3">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+    </div>
+
+    <div class="box4">
+        <p>我是1号P</p>
+        <p>我是2号P</p>
+        <h3>我是1号h3</h3>
+        <h3>我是2号h3</h3>
+        <p>我是3号P</p>
+    </div>
+    <div class="box5">
+        <p>我是1号P</p>
+        <p>我是2号P</p>
+        <h3>我是1号h3</h3>
+        <h3>我是2号h3</h3>
+        <p>我是3号P</p>
+    </div>
+</body>
+</html>
