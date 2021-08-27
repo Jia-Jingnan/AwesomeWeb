@@ -4,41 +4,57 @@
     <meta charset="UTF-8"/>
     <title>M医生 - 责任 品质 关爱</title>
     <meta name="Keywords" content="M医生是专业医院">
-    <meta name="Description" content="美容，减脂，内科，外科">
+    <meta name="Description" content="美容，减脂，内科 ，外科">
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
 <!--    页面头部-->
     <header>
-        <div class="logo">
-            <h1>M医生</h1>
-        </div>
-<!--        网页功能区-->
-        <div class="tool">
-            <img src="images/tel.png">
-            <span class="telnumber">088-88888888</span>
-            <a href=""><img src="images/chinese_icon.png"></a>
-            <a href=""><img src="images/english_icon.png"></a>
+        <div class="header-top">
+            <div class="logo">
+                <h1>M医生</h1>
+            </div>
+    <!--        网页功能区-->
+            <div class="tool">
+                <div class="r1">
+                    <img class="tel" src="images/tel.png">
+                    <span class="telnumber">088-88888888</span>
+                    <a href=""><img class="chinese_icon icon" src="images/chinese_icon.png"></a>
+                    <a href=""><img class="english_icon icon" src="images/english_icon.png"></a>
+                </div>
+                <div class="r2">
+                    <input type="text" placeholder="找医生/找科室">
+                    <button><img src="images/search.png"></button>
+                </div>
+
+            </div>
         </div>
         <!--        网页的导航条-->
-        <nav class="main">
+        <nav class="main-nav">
             <ul>
-                <li>首页</li>
-                <li>医院概况</li>
-                <li>医院动态</li>
-                <li>专家学科</li>
-                <li>服务指南</li>
-                <li>医院文化</li>
-                <li>信息公开</li>
-                <li>互动交流</li>
+                <li class="cur"><a href="">首页</a></li>
+                <li><a href="">医院概况</a></li>
+                <li><a href="">医院动态</a></li>
+                <li><a href="">专家学科</a></li>
+                <li><a href="">服务指南</a></li>
+                <li><a href="">医院文化</a></li>
+                <li><a href="">信息公开</a></li>
+                <li><a href="">互动交流</a></li>
             </ul>
         </nav>
     </header>
 <!--    网页的banner-->
     <section class="banner">
-        <img src="images/banner.png">
-        <h2>责任，科学，严谨</h2>
+        <img class="banner-img" src="images/banner.png">
+        <div class="center">
+            <h2>责任，科学，严谨</h2>
+            <a href="" class="left-btn"></a>
+            <a href="" class="right-btn"></a>
+        </div>
+
+        <!--轮播图底部小圆点, ol是绝对定位，li是浮动的-->
         <ol>
-            <li></li>
+            <li class="cur"></li>
             <li></li>
             <li></li>
             <li></li>
@@ -97,18 +113,18 @@
                     <!--新闻列表-->
                         <a href="">
                             <img src="images/news_pic.png">
-                            <div>全国首届健康预防与商业医疗保险论坛在北京医院举办</div>
+                            <div class="info">全国首届健康预防与商业医疗保险论坛在北京医院举办</div>
                         </a>
                     </div>
                     <ul>
-                        <li><a href="">年度医疗机构用血自查评分表和科室基本信息表</a></li>
-                        <li><a href="">关于上报北京市医疗机构临床用血信息的通知</a></li>
-                        <li><a href="">北京医院输血科通过验收并获批开展“临床基…</a></li>
-                        <li><a href="">国家药品监督管理局关于修订都梁软胶囊非处…</a></li>
-                        <li><a href="">关于将多拉司琼注射剂等药品纳入本市基本医…</a></li>
-                        <li><a href="">关于调整完善本市基本医疗保险门诊特殊疾病…</a></li>
-                        <li><a href="">广东省药学会：关于印发《超药品说明书用药…</a></li>
-                        <li><a href="">人力资源社会保障部关于将36种药品纳入国家…</a></li>
+                        <li><a href="">年度医疗机构用血自查评分表和科室基本信息表</a><span>03-30</span></li>
+                        <li><a href="">关于上报北京市医疗机构临床用血信息的通知</a><span>03-30</span></li>
+                        <li><a href="">北京医院输血科通过验收并获批开展“临床基…</a><span>03-30</span></li>
+                        <li class="spec"><a href="">国家药品监督管理局关于修订都梁软胶囊非处…</a><span>03-30</span></li>
+                        <li><a href="">关于将多拉司琼注射剂等药品纳入本市基本医…</a><span>03-30</span></li>
+                        <li><a href="">关于调整完善本市基本医疗保险门诊特殊疾病…</a><span>03-30</span></li>
+                        <li><a href="">广东省药学会：关于印发《超药品说明书用药…</a><span>03-30</span></li>
+                        <li><a href="">人力资源社会保障部关于将36种药品纳入国家…</a><span>03-30</span></li>
                     </ul>
                 </div>
             </div>
@@ -116,30 +132,35 @@
                 <h3>医院公告</h3>
                 <ol>
                     <li>
+                        <div class="number">01</div>
                         <dl>
-                            <dt><a href=""> 《养生堂》</a></dt>
+                            <dt><a href="">《养生堂》</a></dt>
                             <dd><a href="">公郭立新主任 特殊时期糖尿病人的新冠…</a></dd>
                         </dl>
                     </li>
                     <li>
+                        <div class="number">02</div>
                         <dl>
                             <dt><a href="">《养生堂》</a></dt>
                             <dd><a href="">王少为主任 新型冠状病毒防控指引十八…</a></dd>
                         </dl>
                     </li>
                     <li>
+                        <div class="number">03</div>
                         <dl>
                             <dt><a href="">《我要当医生》</a></dt>
                             <dd><a href="">公郭立新主任 特殊时期糖尿病人的新冠…</a></dd>
                         </dl>
                     </li>
                     <li>
+                        <div class="number">04</div>
                         <dl>
                             <dt><a href="">《全民健康学院》</a></dt>
                             <dd><a href="">公郭立新主任 特殊时期糖尿病人的新冠…</a></dd>
                         </dl>
                     </li>
                     <li>
+                        <div class="number">05</div>
                         <dl>
                             <dt><a href="">《健康北京》</a></dt>
                             <dd><a href="">王建业院长 莫把衰老当病治</a></dd>
@@ -149,81 +170,84 @@
             </div>
         </div>
 
-        <aside class="md-images">
+        <aside class="ad-images">
             <a href="">
                 <img src="images/xuanchuan.png">
             </a>
         </aside>
         <!--科室介绍-->
         <div class="dep-info">
-            <h3>科室介绍</h3>
-            <div class="dep-content">
-                <div>
-                    <h4>内科</h4>
-                    <ul>
-                        <li><a href="">呼吸内科</a></li>
-                        <li><a href="">消化内科</a></li>
-                        <li><a href="">神经内科</a></li>
-                        <li><a href="">心血管内科</a></li>
-                        <li><a href="">肾内科</a></li>
-                        <li><a href="">血液内科</a></li>
-                        <li><a href="">免疫科</a></li>
-                        <li><a href="">内分泌科二</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>肿瘤科</h4>
-                    <ul>
-                        <li><a href="">肿瘤内科</a></li>
-                        <li><a href="">肿瘤外科</a></li>
-                        <li><a href="">肿瘤妇科</a></li>
-                        <li><a href="">骨肿瘤科</a></li>
-                        <li><a href="">放疗科</a></li>
-                        <li><a href="">肿瘤康复科</a></li>
-                        <li><a href="">肿瘤综合科</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>外科</h4>
-                    <ul>
-                        <li><a href="">普通外科</a></li>
-                        <li><a href="">神经外科</a></li>
-                        <li><a href="">心胸外科</a></li>
-                        <li><a href="">泌尿外科</a></li>
-                        <li><a href="">肝胆外科</a></li>
-                        <li><a href="">肛肠外科</a></li>
-                        <li><a href="">心血管外科</a></li>
-                        <li><a href="">烧伤科</a></li>
-                        <li><a href="">骨外科</a></li>
-                        <li><a href="">乳腺外科</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>儿科</h4>
-                    <ul>
-                        <li><a href="">儿科综合</a></li>
-                        <li><a href="">小儿内科</a></li>
-                        <li><a href="">小儿外科</a></li>
-                        <li><a href="">新生儿科</a></li>
-                        <li><a href="">儿童影像科</a></li>
-                        <li><a href="">消化内科</a></li>
-                    </ul>
+            <div class="center">
+                <h3>科室介绍</h3>
+                <a class="more" href="">查看更多&gt;&gt;</a>
+                <div class="dep-content">
+                    <div class="col">
+                        <h4>内科</h4>
+                        <ul>
+                            <li><a href="">呼吸内科</a></li>
+                            <li><a href="">消化内科</a></li>
+                            <li><a href="">神经内科</a></li>
+                            <li><a href="">心血管内科</a></li>
+                            <li><a href="">肾内科</a></li>
+                            <li><a href="">血液内科</a></li>
+                            <li><a href="">免疫科</a></li>
+                            <li><a href="">内分泌科二</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>肿瘤科</h4>
+                        <ul>
+                            <li><a href="">肿瘤内科</a></li>
+                            <li><a href="">肿瘤外科</a></li>
+                            <li><a href="">肿瘤妇科</a></li>
+                            <li><a href="">骨肿瘤科</a></li>
+                            <li><a href="">放疗科</a></li>
+                            <li><a href="">肿瘤康复科</a></li>
+                            <li><a href="">肿瘤综合科</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>外科</h4>
+                        <ul>
+                            <li><a href="">普通外科</a></li>
+                            <li><a href="">神经外科</a></li>
+                            <li class="spec"><a href="">心胸外科</a></li>
+                            <li><a href="">泌尿外科</a></li>
+                            <li><a href="">肝胆外科</a></li>
+                            <li><a href="">肛肠外科</a></li>
+                            <li><a href="">心血管外科</a></li>
+                            <li><a href="">烧伤科</a></li>
+                            <li><a href="">骨外科</a></li>
+                            <li><a href="">乳腺外科</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>儿科</h4>
+                        <ul>
+                            <li class="spec"><a href="">儿科综合</a></li>
+                            <li><a href="">小儿内科</a></li>
+                            <li><a href="">小儿外科</a></li>
+                            <li><a href="">新生儿科</a></li>
+                            <li><a href="">儿童影像科</a></li>
+                            <li><a href="">消化内科</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <!--专家-->
         <div class="exp-info">
             <h3>专家介绍</h3>
-            <a href="">查看更多</a>
+            <a href="" class="more">查看更多&gt;&gt;</a>
             <ul>
                 <li>
                     <div class="picbox">
                         <a href="">
-                            <img src="images/lilin.png">
+                            <img src="images/lilin.png" alt="">
                         </a>
                     </div>
                     <div class="wordbox">
-                        <p>姓名：李林</p>
+                        <p>姓名：李琳</p>
                         <p>科室：肿瘤内科</p>
                         <p>职称：主任医师</p>
                         <p>介绍：北京医院肿瘤内科科室主任，党支部书记，副教授，硕士研究生导师，中国老年肿瘤专业委员会肺癌分委会常务委员，北京医学……</p>
@@ -232,7 +256,7 @@
                 <li>
                     <div class="picbox">
                         <a href="">
-                            <img src="images/maoxiaohui.png">
+                            <img src="images/maoxiaohui.png" alt="">
                         </a>
                     </div>
                     <div class="wordbox">
@@ -245,7 +269,7 @@
                 <li>
                     <div class="picbox">
                         <a href="">
-                            <img src="images/huangcibo.png">
+                            <img src="images/huangcibo.png" alt="">
                         </a>
                     </div>
                     <div class="wordbox">
@@ -258,33 +282,33 @@
                 <li>
                     <div class="picbox">
                         <a href="">
-                            <img src="images/caosuyan.png">
+                            <img src="images/caosuyan.png" alt="">
                         </a>
                     </div>
                     <div class="wordbox">
                         <p>姓名：曹素艳</p>
                         <p>科室：特需医疗部</p>
                         <p>职称：主任医师</p>
-                        <p>介绍：北京医院特需医疗部（健康管理中心）/全科医疗部主任，老年与全科医学中心副主任，主任医师，医学硕士。北京大学医学部硕士………</p>
+                        <p>介绍：北京医院特需医疗部（健康管理中心）/全科医疗部主任，老年与全科医学中心副主任，主任医师，医学硕士。北京大学医学部硕士……</p>
                     </div>
                 </li>
                 <li>
                     <div class="picbox">
                         <a href="">
-                            <img src="images/chenhaibo.png">
+                            <img src="images/chenhaibo.png" alt="">
                         </a>
                     </div>
                     <div class="wordbox">
                         <p>姓名：陈海波</p>
                         <p>科室：神经内科</p>
                         <p>职称：主任医师</p>
-                        <p>介绍：北京医院神经内科主任，主任医师，北京大学医学部神经病学系副主任、教授。中国医师协会神经内科医师分会副会长兼帕金…………</p>
+                        <p>介绍：北京医院神经内科主任，主任医师，北京大学医学部神经病学系副主任、教授。中国医师协会神经内科医师分会副会长兼帕金……</p>
                     </div>
                 </li>
                 <li>
                     <div class="picbox">
                         <a href="">
-                            <img src="images/jack.png">
+                            <img src="images/jack.png" alt="">
                         </a>
                     </div>
                     <div class="wordbox">
@@ -296,32 +320,33 @@
                 </li>
             </ul>
         </div>
-
     </section>
     <footer class="footer">
-        <div class="friend-links">
-            <h3>友情链接</h3>
-            <ul>
-                <li><a href="">院长信息</a></li>
-                <li><a href="">投诉信箱</a></li>
-                <li><a href="">在线调查</a></li>
-                <li><a href="">地理位置</a></li>
-                <li><a href="">网站地图</a></li>
-                <li><a href="">网站帮助</a></li>
-                <li><a href="">隐私声明</a></li>
+        <div class="center">
+            <div class="friend-links">
+                <h3>友情链接</h3>
+                <ul>
+                    <li><a href="">院长信息</a></li>
+                    <li><a href="">投诉信箱</a></li>
+                    <li><a href="">在线调查</a></li>
+                    <li><a href="">地理位置</a></li>
+                    <li><a href="">网站地图</a></li>
+                    <li><a href="">网站帮助</a></li>
+                    <li><a href="">隐私声明</a></li>
 
-            </ul>
-        </div>
-        <div class="address">
-            <h3>联系方式</h3>
-            <ul>
-                <li>地址：北理工国防大厦111号</li>
-                <li>电话：088-88888888</li>
-                <li>邮箱：kefu@imooc.com</li>
-                <li>邮编：666666</li>
-                <li>网址：<a href="http://www.imooc.com">http://imooc.com</a> </li>
-                <li>举报热线：088-88888888</li>
-            </ul>
+                </ul>
+            </div>
+            <div class="address">
+                <h3>联系方式</h3>
+                <ul>
+                    <li>地址：北理工国防大厦111号</li>
+                    <li>电话：088-88888888</li>
+                    <li>邮箱：kefu@imooc.com</li>
+                    <li>邮编：666666</li>
+                    <li>网址：<a href="http://www.imooc.com">http://imooc.com</a> </li>
+                    <li>举报热线：088-88888888</li>
+                </ul>
+            </div>
         </div>
     </footer>
 
