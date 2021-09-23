@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>05-背景裁切</title>
+    <style>
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            border: 10px dotted #000;
+            padding: 60px;
+            background-image: url("images/0.jpg");
+            margin-bottom: 20px;
+            background-size: 100%;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            border: 10px dotted #000;
+            padding: 60px;
+            background-image: url("images/0.jpg");
+            background-clip: padding-box;
+            margin-bottom: 20px;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            border: 10px dotted #000;
+            padding: 60px;
+            background-image: url("images/0.jpg");
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <div class="box3"></div>
+</body>
+</html>
