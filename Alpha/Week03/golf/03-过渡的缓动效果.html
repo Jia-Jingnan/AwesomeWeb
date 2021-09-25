@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>03-过渡的缓动效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            border: 1px solid #000000;
+        }
+
+        .box1 p {
+            width: 60px;
+            height: 60px;
+            background-color: orange;
+            margin-bottom: 10px;
+            position: relative;
+            left: 0;
+            transition: left 5s linear 0s;
+        }
+
+        .box1 p:nth-child(2){
+            transition-timing-function: ease;
+        }
+
+        .box1 p:nth-child(3){
+            transition-timing-function: ease-in;
+        }
+
+        .box1 p:nth-child(4){
+            transition-timing-function: ease-out;
+        }
+
+        .box1 p:nth-child(5){
+            transition-timing-function: ease-in-out;
+        }
+
+        .box1:hover p {
+            left: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+</body>
+</html>
