@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>04-编程练习</title>
+</head>
+<body>
+    <script>
+
+        var str = 'Never deter till tomorrow that which you can do today';
+        var index = str.indexOf('tomorrow');
+        var strNew = str.substr(0, index);
+        var strNew2 = str.substr(index + 'tomorrow'.length);
+        var upperStr = 'tomorrow'.toUpperCase();
+
+        console.log(strNew + upperStr + strNew2);
+    </script>
+</body>
+</html>
