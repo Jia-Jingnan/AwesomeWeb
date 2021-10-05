@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>综合表达式</title>
+</head>
+<body>
+    <script>
+        var year = Number(prompt("请输入年份:"));
+        // 根据两个条件进行判断
+        // 能被4整除，切不能被100整除
+        // 能被100整除，切能被400整除
+        alert(year % 4 == 0 && year % 100 != 0 || year % 100 == 0 || year % 400 == 0)
+    </script>
+</body>
+</html>
