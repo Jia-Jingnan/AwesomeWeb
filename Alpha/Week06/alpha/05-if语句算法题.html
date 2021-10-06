@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>判断水仙花数</title>
+</head>
+<body>
+    <script>
+        var n = prompt("请输入一个三位数的数字");
+        var length = n.length;
+        if (!isNaN(Number(n)) && 100 <= n && n <= 999) {
+            var res = Math.pow(Number(n.charAt(0)),3) + Math.pow(Number(n.charAt(1)),3) + Math.pow(Number(n.charAt(2)),3);
+            if (res == Number(n)){
+                alert(n + "是水仙花数");
+            } else {
+                alert(n + "不是水仙花数");
+            }
+        } else {
+            alert("数字位数输入有误，请重新输入")
+        }
+    </script>
+</body>
+</html>

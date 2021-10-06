@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>判断水仙花数</title>
+</head>
+<body>
+    <script>
+        var n = Number(prompt("请输入一个三位数的数字"));
+
+        // 验证用户输入的数字，进行合法性验证
+        if (!isNaN(n) && 100 <= n && n <= 999){
+            // 用户输入的数字合法情况下
+            // 百位
+            var a = Math.floor(n / 100);
+            // 十位
+            var b = Math.floor(n / 10) % 10;
+            // 个位
+            var c = n % 10;
+            if (Math.pow(a,3) + Math.pow(a,3) + Math.pow(a,3) == n){
+                alert("是水仙花数")
+            } else {
+                alert("不是水仙花数")
+            }
+        } else {
+            // 用户输入的数字不合法情况下
+            alert("输入的数字不合法")
+        }
+
+    </script>
+</body>
+</html>
