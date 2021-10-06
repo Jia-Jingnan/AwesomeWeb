@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>判断水仙花数</title>
+</head>
+<body>
+    <script>
+        // 无法确定开始和结束范围的情况下，更适合使用while
+        var sum = 0;
+        var day = 1;
+        while (sum <= 500){
+            // 32天的时候，sum已经大于500， day还是会+1,需要在左后输出的时候-1
+            sum += day;
+            day++;
+        }
+        // 一定要注意"出一错误"
+        // 循环条件和变量值不是同一个，即sum和day，如果是同一个不会出现出一错误
+        // console.log(day);
+        console.log(day - 1);
+    </script>
+</body>
+</html>
