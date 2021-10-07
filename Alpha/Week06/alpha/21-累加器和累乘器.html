@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>判断水仙花数</title>
+</head>
+<body>
+    <script>
+        // 累加器制作总和
+        // 累乘器制作每一项
+        var sum = 0;
+        var item = 1;
+
+        // 输入n
+        var n = Number(prompt("输入数字n"));
+        for (var i = 1; i <= n; i++){
+            // 制作类撑起
+            item *= i/(2*i + 1);
+            console.log(item);
+            sum += item;
+        }
+        alert((sum+1)*2);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>判断水仙花数</title>
+</head>
+<body>
+    <script>
+        // 穷举法
+        // 鸡兔同笼, a只鸡，b只兔子
+        for (var a = 0; a <= 35; a++){
+            for (var b = 0; b <= 35; b++){
+                if (a + b ==35 && 2*a + b*4 == 96){
+                    console.log(a+","+b);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

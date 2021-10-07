@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>判断水仙花数</title>
+</head>
+<body>
+    <script>
+        // 穷举法
+        // 给外层for循环起了一个名字outer
+        outer:for (var i = 2; i <= 100; i++){
+            // 内循环开始从2尝试除i，如果能够整除，说明不是质数
+            for (var j = 2; j < i; j++){
+                if (i % j == 0){
+                    // 给外层for循环增加label
+                    continue outer;// 结束这个i的外层循环
+                }
+            }
+        }
+        console.log(i);
+
+    </script>
+</body>
+</html>
