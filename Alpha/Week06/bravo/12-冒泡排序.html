@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>数组</title>
+</head>
+<body>
+    <script>
+
+        var arr = [85,44,56,23,12,33];
+
+        // 一趟一趟的比较，躺数序号就是i
+        for (var i = 1; i < arr.length; i++){
+            // 内层循环两两比较，从最右边的两个数开始比较，确定最小的数放在最左边，这时最外层的比较次数就减少一次
+            for (var j = arr.length - 1; j >= i; j--){
+                // 判断大小，交换位置
+                if (arr[j] < arr[j-1]){
+                    var tmp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = tmp;
+                }
+            }
+        }
+
+        console.log(arr);
+
+    </script>
+
+</body>
+</html>

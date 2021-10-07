@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>数组</title>
+</head>
+<body>
+    <script>
+        // 求数组的最大值
+        // 假设arr[0]为最大值，max = arr[0]先于arr[1]比较，arr[0]>arr[1]则arr[0]继续与arr[2]比较，
+        // 否则max = arr[1]
+
+        var arr = [85,44,56,23,12,33,45];
+
+        // 定义max和min
+        var max = arr[0];
+        var min = arr[0];
+
+        for (var i = 1; i < arr.length; i++){
+            if (arr[i] > max){
+                max = arr[i]
+            } else if (arr[i] < min){
+                min = arr[i];
+            }
+        }
+
+        console.log(max + "," + min);
+
+    </script>
+
+</body>
+</html>

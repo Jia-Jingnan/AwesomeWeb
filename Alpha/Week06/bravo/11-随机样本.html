@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>数组</title>
+</head>
+<body>
+    <script>
+
+        var arr = [85,44,56,23,12,33];
+
+        var result = [];
+
+        for (var i = 0; i < arr.length; i++){
+            // 随机选择一项的下标，数组的下标0—》length-1
+            var n = parseInt(Math.random() * arr.length);
+            result.push(arr[n]);
+            // 删除加入到新数组的的数据，避免重复
+            arr.splice(n,1);
+        }
+
+    </script>
+
+</body>
+</html>

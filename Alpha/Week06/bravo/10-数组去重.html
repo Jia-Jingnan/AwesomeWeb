@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>数组</title>
+</head>
+<body>
+    <script>
+
+        var arr = [85,44,56,23,12,33,45,45,12,23,33];
+        var neaArr = [];
+
+        // 定义max和min
+        for (var i = 0; i < arr.length; i++){
+            if (!neaArr.includes(arr[i])){
+                // neaArr[i] = arr[i];
+                neaArr.push(arr[i]);
+            }
+        }
+
+        console.log(neaArr);
+    </script>
+
+</body>
+</html>
