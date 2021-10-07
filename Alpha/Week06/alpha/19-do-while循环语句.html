@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>判断水仙花数</title>
+</head>
+<body>
+    <script>
+
+        var randomNum = parseInt(Math.random() * 98 + 2);
+        console.log(randomNum);
+
+        // do{
+        //
+        //     var input = Number(prompt("请输入猜测的数字"));
+        //     if (input > randomNum){
+        //         console.log("大")
+        //     }
+        //     if (input < randomNum) {
+        //         console.log("小")
+        //     }
+        // } while (input != randomNum);
+
+        // 初始最小值最大值
+        var min = 1;
+        var max = 100;
+
+        while (true){
+            var n = Number(prompt("请猜测数字" + min + "~" + max));
+            // 验证用户的输入是否在数字范围内
+            if (n < min || n > max){
+                alert("输入的数字不在范围内");
+                // 不在区间内，跳出此次循环重新开始,开始下一次迭代
+                continue;
+            }
+            // 判断
+            if (n > randomNum) {
+                alert("大");
+                max = n;
+            } else if (n < randomNum) {
+                alert("小");
+                min = n;
+            } else {
+                alert("right");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
