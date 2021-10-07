@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>数组</title>
+</head>
+<body>
+    <script>
+        // 浅克隆，如果数组中有引用类型值
+        var arr1 = [1,2,3,4];
+        var result = [];
+        // 把arr1中的数据推到result中
+        for (var i = 0; i < arr1.length; i++){
+            result.push(arr1[i]);
+        }
+
+        console.log(result == arr1);
+
+    </script>
+
+</body>
+</html>
