@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>函数</title>
+</head>
+<body>
+    <script>
+        // 定义一个阶乘的函数
+        function factorial(n) {
+            var result = 1;
+            for (var i = n; i > 1; i--){
+                result *= i;
+            }
+
+            return result;
+        }
+
+
+        // 寻找喇叭花数，穷举法
+        for (var i = 100; i <= 999; i++){
+            // 把数字变成字符串
+            var i_str = i.toString();
+            // 拆分
+            var a = i_str[0];
+            var b = i_str[1];
+            var c = i_str[2];
+
+            //console.log(a,b,c);
+
+            // 根据条件判断
+            if (factorial(a) + factorial(b) + factorial(c) == i){
+               console.log(i);
+            }
+        }
+
+
+    </script>
+</body>
+</html>

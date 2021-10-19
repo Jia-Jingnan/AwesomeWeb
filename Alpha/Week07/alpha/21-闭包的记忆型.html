@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    function createCheckTemp(standardTemp) {
+      function checkTemp(n){
+        if (n < standardTemp){
+          alert('体温合格')
+        } else {
+          alert('体温偏高')
+        }
+      }
+
+      return checkTemp;
+
+    }
+
+    // 创建一个函数，以37.1为合格线
+    var checkTemp_A = createCheckTemp(37.1);
+    checkTemp_A(37.2);
+    checkTemp_A(37.1);
+    // 创建一个函数，以37.3为合格线
+    var checkTemp_B = createCheckTemp(37.3);
+    checkTemp_B(37.2);
+    checkTemp_B(37.1)
+  </script>
+</body>
+</html>

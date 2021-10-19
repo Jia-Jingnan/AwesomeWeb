@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>函数</title>
+</head>
+<body>
+    <script>
+        // arguments
+        // function fun() {
+        //     console.log(arguments);
+        //     console.log(arguments[0]);
+        //     console.log(arguments[1]);
+        // }
+        //
+        // fun(3,4,5,6);
+
+        // 不管用户传入多少个实际参数，永远可以计算他们的和
+        function fun() {
+            var sum = 0;
+            for (var i = 0; i < arguments.length; i++){
+                sum += arguments[i];
+            }
+            console.log('所有参数的和为：' + sum)
+        }
+
+        fun(2,3,45,6,7,89)
+    </script>
+</body>
+</html>

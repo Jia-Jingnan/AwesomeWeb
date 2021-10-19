@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>闭包</title>
+</head>
+<body>
+  <script>
+    function fun() {
+      var name = '慕课网';
+
+      function innerFun() {
+        alert(name);
+      }
+
+      return innerFun;
+    }
+
+    var inn = fun();
+    inn();
+
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>闭包模拟私有变量</title>
+</head>
+<body>
+  <script>
+    // 封装一个函数，功能就是私有化变量
+    function fun() {
+      var a = 0;
+
+
+      return {
+        getA: function () {
+          return a;
+        },
+        add: function () {
+          a++;
+        },
+        pow: function () {
+          a *= 2;
+        }
+      }
+    }
+
+    var obj = fun();
+    console.log(obj.getA());
+    // a 加1操作
+    obj.add();
+    obj.add();
+    obj.add();
+    console.log(obj.getA());
+  </script>
+</body>
+</html>

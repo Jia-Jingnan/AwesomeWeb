@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>作用域链</title>
+</head>
+<body>
+  <script>
+    var a = 1;
+    var b = 2;
+
+    function fun() {
+      c = 31;
+      var b = 4;
+      b++;
+      c++;
+    }
+
+    fun();
+    console.log(b);
+    console.log(c);
+
+
+
+
+  </script>
+</body>
+</html>
