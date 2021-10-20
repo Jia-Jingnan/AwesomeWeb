@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>节点操作练习-创建九九乘法表</title>
+  <style>
+    td {
+      width: 120px;
+      height: 30px;
+      border: 1px solid #000000;
+    }
+  </style>
+
+</head>
+<body>
+  <table id="mytable">
+
+  </table>
+
+  <script>
+  // 动态创建一个20行12列的表格
+  var myTable = document.getElementById('mytable');
+
+  for (var i = 1; i <= 9; i++){
+    // 创建新的tr标签
+    var tr = document.createElement('tr');
+    for (var j = 1; j <= i; j++){
+      // 创建新的td标签
+      var td = document.createElement('td');
+      // 设置td内部的文字
+      td.innerText = i + 'x' + j + '=' + (i * j);
+      tr.appendChild(td);
+    }
+    myTable.appendChild(tr);
+  }
+  </script>
+</body>
+</html>

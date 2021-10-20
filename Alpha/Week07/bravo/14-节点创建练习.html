@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>节点操作练习</title>
+  <style>
+    td {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #000000;
+    }
+  </style>
+
+</head>
+<body>
+  <table id="mytable">
+
+  </table>
+
+  <script>
+  // 动态创建一个20行12列的表格
+  var myTable = document.getElementById('mytable');
+
+  for (var i = 0; i < 20; i++){
+    // 创建新的tr标签
+    var tr = document.createElement('tr');
+    for (var j = 0; j < 12; j++){
+      // 创建新的td标签
+      var td = document.createElement('td');
+      tr.appendChild(td);
+    }
+    myTable.appendChild(tr);
+  }
+  </script>
+</body>
+</html>

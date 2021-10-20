@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>删除节点</title>
+
+</head>
+<body>
+  <div id="box1">
+    <ul>
+      <li>牛奶</li>
+      <li>可乐</li>
+      <li>果汁</li>
+    </ul>
+  </div>
+
+  <div id="box2">
+
+  </div>
+
+  <script>
+    var box1 = document.getElementById('box1');
+    var box2 = document.getElementById('box2');
+    var theu1 = box1.getElementsByTagName('ul')[0];
+
+    var clone_ul = theu1.cloneNode(true);
+    box2.appendChild(clone_ul);
+  </script>
+</body>
+</html>

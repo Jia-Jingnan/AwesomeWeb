@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>innerHTML和innerText</title>
+</head>
+<body>
+  <div id="box"></div>
+  <div id="box2"></div>
+
+  <script>
+
+    var oBox = document.getElementById('box');
+    oBox.innerHTML = '<ul><li>牛奶</li></ul>';
+    var oBox2 = document.getElementById('box2');
+    oBox2.innerText = '<ul><li>牛奶</li></ul>';
+  </script>
+</body>
+</html>

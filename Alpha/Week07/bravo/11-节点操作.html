@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>节点操作</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000000;
+    }
+  </style>
+</head>
+<body>
+  <img id="pic" src="images/HP_CRS23_causeway_DSC_7027_Desktop.webp">
+  <a href="http://www.baidu.com">去百度</a>
+
+  <script>
+    var oPic = document.getElementById('pic');
+    oPic.src = 'images/I4_Splashdown_Desktop.webp';
+    var oA = document.getElementsByTagName('a');
+    oA[0].href = 'http://www.imooc.com';
+  </script>
+</body>
+</html>

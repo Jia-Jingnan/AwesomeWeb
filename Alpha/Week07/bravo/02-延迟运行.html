@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>延迟运行</title>
+
+  <script>
+    // 给window对象添加事件监听,onload表示页面都加载完毕了
+    window.onload = function () {
+      var box1 = document.getElementById('box1');
+      var box2 = document.getElementById('box2');
+      alert(box1.nodeType);
+      alert(typeof box1);
+    }
+  </script>
+</head>
+<body>
+  <div id="box1">我是盒子1</div>
+  <div id="box2">我是盒子2</div>
+</body>
+</html>

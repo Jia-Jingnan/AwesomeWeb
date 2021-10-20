@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>innerHTML和innerText</title>
+</head>
+<body>
+  <div>前端技术</div>
+  <div>IOS技术</div>
+  <div>安卓技术</div>
+  <div>Java技术</div>
+
+  <script>
+    var divTag = document.getElementsByTagName('div');
+    for (var i = 0; i < divTag.length; i++){
+      var inner = divTag[i].innerHTML;
+      divTag[i].innerText = '来慕课网学习最新的' + inner;
+    }
+  </script>
+</body>
+</html>

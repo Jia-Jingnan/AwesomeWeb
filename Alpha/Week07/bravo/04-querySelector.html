@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>getElementById</title>
+</head>
+<body>
+  <div id="box">
+    <p>我是段落</p>
+    <p class="spec">松狮点过</p>
+    <p>我是断过哦</p>
+  </div>
+
+  <script>
+    var th_p = document.querySelector('#box .spec');
+    // 使用css3选择器进行选择
+    var th_p2 = document.querySelector('#box p:nth-child(3)');
+    console.log(th_p);
+    console.log(th_p2);
+  </script>
+</body>
+</html>

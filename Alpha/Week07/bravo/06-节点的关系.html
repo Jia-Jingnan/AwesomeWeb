@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>节点的关系</title>
+</head>
+<body>
+  <div id="box">
+    <p>我是段落A</p>
+    <p id="para">我是段落B</p>
+    <p>我是段落</p>
+  </div>
+
+  <script>
+    var box = document.getElementById('box');
+    var para = document.getElementById('para');
+
+    // 标签之间的空格被当作文本节点
+    console.log(box.childNodes);
+    // 所有元素子节点,不包含空格
+    console.log(box.children);
+
+    // 第一个子节点
+    console.log(box.firstChild);
+    // 第一个元素子节点
+    console.log(box.firstElementChild);
+
+    // 最后一个子节点
+    console.log(box.lastChild);
+    // 最后一个元素子节点
+    console.log(box.lastElementChild);
+
+    // 父节点
+    console.log(para.parentNode);
+    console.log(para.previousSibling);
+    console.log(para.previousElementSibling);
+    console.log(para.nextElementSibling);
+    console.log(para.nextSibling);
+  </script>
+</body>
+</html>

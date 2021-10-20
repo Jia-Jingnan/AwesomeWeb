@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>节点操作</title>
+
+</head>
+<body>
+  <div id="box">
+    <p>我是原本段落0</p>
+    <p>我是原本段落1</p>
+    <p>我是原本段落2</p>
+  </div>
+  <script>
+    var oBox = document.getElementById('box');
+    var oP = document.createElement('p');
+    var oPs = document.getElementsByTagName('p');
+    oP.innerText = '我是新来的';
+    // 上树
+    // oBox.append(oP);
+    oBox.insertBefore(oP,oPs[0]);
+
+  </script>
+</body>
+</html>
